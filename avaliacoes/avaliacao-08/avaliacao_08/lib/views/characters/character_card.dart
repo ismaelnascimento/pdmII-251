@@ -21,14 +21,13 @@ class CharacterCard extends StatelessWidget {
                 character.img,
                 width: 120,
                 height: 120,
-                fit: BoxFit.cover,
-                errorBuilder:
-                    (context, error, stackTrace) => Container(
-                      width: 120,
-                      height: 120,
-                      color: Colors.grey[300],
-                      child: const Icon(Icons.broken_image, size: 40),
-                    ),
+                fit: BoxFit.contain,
+                errorBuilder: (context, error, stackTrace) => Container(
+                  width: 120,
+                  height: 120,
+                  color: Colors.grey[300],
+                  child: const Icon(Icons.broken_image, size: 40),
+                ),
               ),
             ),
             const SizedBox(width: 16),

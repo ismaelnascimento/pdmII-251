@@ -36,8 +36,8 @@ class _CharactersViewState extends State<CharactersView> {
 
     final CharactersService charactersService = CharactersService();
     try {
-      List<CharacterModel> charactersList =
-          await charactersService.getCharacters();
+      List<CharacterModel> charactersList = await charactersService
+          .getCharacters();
       setState(() {
         characters = charactersList;
       });
